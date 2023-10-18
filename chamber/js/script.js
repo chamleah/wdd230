@@ -1,4 +1,6 @@
-document.querySelector('#©').textContent = new Date(Date.now()).getFullYear();
+
+date = new Date(Date.now());
+document.querySelector('#©').textContent = date.getFullYear();
 
 const opciones = 
 { weekday: 'long', 
@@ -17,9 +19,7 @@ day: 'numeric' };
 
 
 document.querySelector('#datetime').textContent = 
-new Date(Date.now()).toLocaleString('en-US',opciones2);
-
-
+new Date(Date.now()).toLocaleString('en-UK',opciones2);
 
 function toggleMenu() {
     document.getElementById('primaryNav').classList.toggle('open');
